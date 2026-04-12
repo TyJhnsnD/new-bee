@@ -1,0 +1,33 @@
+{
+  "site": {
+    "title": "Landing Demo",
+    "tagline": "Compromiso y certificaciones"
+  },
+  "nav": {
+    "home": "Inicio",
+    "commitment": "Compromiso",
+    "certifications": "Certificaciones",
+    "view_blog": "Conoce nuestro blog"
+  },
+  "landing": {
+    "hero_brand": "HONEY BEE",
+    "hero_title": " Miel natural de calidad",
+    "hero_subtitle": "Empresa yucateca especializada en la producción de miel orgánica de alta calidad, con venta directa en línea a nivel nacional. Ofrecemos productos naturales, trazables y de origen 100% peninsular, llevando lo mejor de la miel directamente hasta tu hogar",
+    "hero_cta": "Conocer más",
+    "hero_natural": "100% natural",
+    "hero_highlight": "Apoyo a productores locales",
+    "hero_sold": "+140,000 frascos vendidos",
+    "hero_site": "www.yourwebsite.com",
+    "section_commitment_title": "Nuestro compromiso",
+    "section_commitment_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+    "section_certifications_title": "Certificaciones y estándares",
+    "section_certifications_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.",
+    "section_extra_title": "Impacto medible",
+    "section_extra_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+    "read_more": "Ver detalles"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Próximamente: contenido de lecturas estáticas."
+  }
+}

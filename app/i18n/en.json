@@ -1,0 +1,32 @@
+{
+  "site": {
+    "title": "Demo Landing",
+    "tagline": "Commitment and certifications"
+  },
+  "nav": {
+    "home": "Home",
+    "commitment": "Commitment",
+    "certifications": "Certifications",
+    "view_blog": "View blog"
+  },
+  "landing": {
+    "hero_brand": "PURE HONEY",
+    "hero_title": "HONEY",
+    "hero_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+    "hero_highlight": "Real commitment",
+    "hero_cta": "Learn more",
+    "hero_natural": "100% natural",
+    "hero_site": "www.yourwebsite.com",
+    "section_commitment_title": "Our commitment",
+    "section_commitment_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+    "section_certifications_title": "Certifications and standards",
+    "section_certifications_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.",
+    "section_extra_title": "Measurable impact",
+    "section_extra_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+    "read_more": "See details"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Coming soon: static reading content."
+  }
+}

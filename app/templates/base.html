@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="{{ current_lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ t('site.title') }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="main-nav" aria-label="Principal">
+        <span class="main-nav-indicator" aria-hidden="true"></span>
+        <a href="{{ url_for('main.home', lang=current_lang) }}#inicio">{{ t('nav.home') }}</a>
+        <a href="{{ url_for('main.home', lang=current_lang) }}#compromiso">{{ t('nav.commitment') }}</a>
+        <a href="{{ url_for('main.home', lang=current_lang) }}#certificaciones">{{ t('nav.certifications') }}</a>
+      </nav>
+    </header>
+
+    <div class="floating-actions" aria-label="Acciones rapidas">
+      <a class="btn floating-btn" href="{{ url_for('main.home', lang='es') }}">ES</a>
+      <a class="btn floating-btn" href="{{ url_for('main.home', lang='en') }}">EN</a>
+      <a class="btn btn-main floating-blog" href="{{ url_for('main.blog_placeholder', lang=current_lang) }}">{{ t('nav.view_blog') }}</a>
+    </div>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-socials" aria-label="Redes sociales">
+        <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X">
+          <img src="https://cdn.simpleicons.org/x/1f140d" alt="X">
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <img src="https://cdn.simpleicons.org/facebook/1f140d" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <img src="https://cdn.simpleicons.org/instagram/1f140d" alt="Instagram">
+        </a>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/site.js') }}" defer></script>
+  </body>
+</html>
