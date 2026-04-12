@@ -257,6 +257,295 @@ main {
   font-weight: 800;
 }
 
+.about-section {
+  min-height: 100vh;
+  padding: clamp(1rem, 3vw, 2.8rem);
+  background-image: linear-gradient(
+      rgba(255, 248, 238, 0.88),
+      rgba(255, 248, 238, 0.9)
+    ),
+    url("/static/img/about.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: stretch;
+}
+
+.about-overlay {
+  width: 100%;
+  min-height: calc(100vh - 2rem);
+  display: grid;
+  align-content: center;
+  gap: 1.6rem;
+}
+
+.about-heading {
+  max-width: 760px;
+}
+
+.about-heading h2 {
+  margin: 0;
+  color: var(--text-strong);
+  font-family: "Baloo 2", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 0.95;
+}
+
+.about-heading p:last-child {
+  max-width: 60ch;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.about-card {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 30px rgba(100, 67, 44, 0.12);
+  backdrop-filter: blur(2px);
+}
+
+.about-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.about-card h3 {
+  margin: 0;
+  color: var(--text-strong);
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.about-card p {
+  margin: 0;
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.about-list li {
+  line-height: 1.45;
+}
+
+/* -------- Compromiso / Values honeycomb section -------- */
+
+.commitment-section {
+  --hex-w: 210px;
+  --hex-h: 182px;
+  --hex-gap: 14px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: calc(var(--topbar-height) + 0.75rem);
+  background-image: linear-gradient(
+      rgba(20, 10, 4, 0.78),
+      rgba(20, 10, 4, 0.82)
+    ),
+    url("/static/img/hive.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+  padding: clamp(3rem, 6vw, 6rem) clamp(1rem, 4vw, 3rem);
+}
+
+.commitment-heading {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.commitment-heading .hero-brand {
+  color: var(--accent);
+}
+
+.commitment-heading h2 {
+  margin: 0;
+  color: #f6e9dc;
+  font-family: "Baloo 2", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
+}
+
+.commitment-description {
+  margin: 0.7rem auto 0;
+  max-width: 70ch;
+  color: rgba(246, 233, 220, 0.92);
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+  line-height: 1.45;
+}
+
+/* Honeycomb grid */
+
+.hive-grid {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bee-swarm {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bee-sprite {
+  position: absolute;
+  width: clamp(34px, 4.5vw, 56px);
+  height: auto;
+  opacity: 0.95;
+  filter: drop-shadow(0 5px 7px rgba(30, 16, 8, 0.35));
+  will-change: transform;
+}
+
+.bee-sprite.bee--cursor {
+  width: clamp(40px, 5.2vw, 64px);
+}
+
+.hive-row {
+  display: flex;
+  gap: var(--hex-gap);
+}
+
+.hive-row--offset {
+  margin-left: calc((var(--hex-w) + var(--hex-gap)) / 2);
+  margin-top: calc(var(--hex-h) * -0.275);
+}
+
+.hive-cell {
+  width: var(--hex-w);
+  height: var(--hex-h);
+  flex-shrink: 0;
+  transition: width 380ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hive-cell:hover {
+  width: calc(var(--hex-w) * 1.92);
+}
+
+.hive-hex {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: linear-gradient(150deg, #f0b842 0%, #c97a25 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.1rem;
+  cursor: default;
+  transition:
+    clip-path 380ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 200ms ease;
+}
+
+/* Alternate hex shade for visual honeycomb depth */
+.hive-row:nth-child(1) .hive-cell:nth-child(even) .hive-hex,
+.hive-row:nth-child(2) .hive-cell:nth-child(odd) .hive-hex {
+  background: linear-gradient(150deg, #d4882e 0%, #b06322 100%);
+}
+
+.hive-cell:hover .hive-hex {
+  clip-path: polygon(4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
+  background: linear-gradient(150deg, #f5ca5a 0%, #d4922e 100%);
+}
+
+.hive-name {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.15;
+  transition: margin-bottom 300ms ease;
+}
+
+.hive-cell:hover .hive-name {
+  margin-bottom: 0.5rem;
+}
+
+.hive-desc {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.78rem;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 0.6rem;
+  opacity: 0;
+  line-height: 1.45;
+  transition:
+    max-height 340ms 30ms ease,
+    opacity 300ms 80ms ease;
+}
+
+.hive-cell:hover .hive-desc {
+  max-height: 80px;
+  opacity: 1;
+}
+
+/* Responsive hive */
+@media (max-width: 960px) {
+  .commitment-section {
+    --hex-w: 170px;
+    --hex-h: 147px;
+    --hex-gap: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .commitment-section {
+    --hex-w: 140px;
+    --hex-h: 121px;
+    --hex-gap: 8px;
+  }
+
+  .hive-name {
+    font-size: 0.82rem;
+  }
+
+  .bee-sprite {
+    width: clamp(28px, 7.5vw, 44px);
+  }
+
+  .bee-sprite.bee--cursor {
+    width: clamp(32px, 8.5vw, 50px);
+  }
+}
+
+@media (max-width: 520px) {
+  .hive-row--offset {
+    margin-left: 0;
+    margin-top: var(--hex-gap);
+  }
+
+  .hive-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .site-footer {
   position: relative;
   z-index: 1;
@@ -363,6 +652,10 @@ main {
     order: unset;
   }
 
+  .about-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .main-nav {
     gap: 0.2rem;
   }
@@ -419,6 +712,18 @@ main {
 
   .hero-badges {
     gap: 0.5rem;
+  }
+
+  .about-section {
+    padding-inline: 0.85rem;
+  }
+
+  .about-overlay {
+    min-height: calc(100vh - 1rem);
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
   }
 
   .site-footer {

@@ -15,14 +15,99 @@
   </div>
 </section>
 
-<section class="section-two-cols section-panel" id="compromiso">
-  <div class="section-media">
-    <img src="https://picsum.photos/200/300" alt="Placeholder compromiso">
+<section class="about-section" id="sobre-nosotros">
+  <div class="about-overlay">
+    <div class="about-heading">
+      <p class="hero-brand">{{ t('about.kicker') }}</p>
+      <h2>{{ t('about.title') }}</h2>
+    </div>
+
+    <div class="about-cards">
+      <article class="about-card">
+        <img src="{{ url_for('static', filename='img/mex_honey.png') }}" alt="Historia">
+        <h3>{{ t('about.history_title') }}</h3>
+        <p style="text-align: justify;">{{ t('about.history_body') }}</p>
+      </article>
+
+      <article class="about-card">
+        <img src="{{ url_for('static', filename='img/bees.png') }}" alt="Mision">
+        <h3>{{ t('about.mission_title') }}</h3>
+        <p style="text-align: justify; ">{{ t('about.mission_body') }}</p>
+      </article>
+
+      <article class="about-card">
+        <img src="{{ url_for('static', filename='img/about.png') }}" alt="Vision">
+        <h3>{{ t('about.vision_title') }}</h3>
+        <p style="text-align: justify; word-spacing: -2px;">{{ t('about.vision_body') }}</p>
+      </article>
+
+      <article class="about-card">
+        <img src="{{ url_for('static', filename='img/colony.png') }}" alt="Objetivos">
+        <h3>{{ t('about.objectives_title') }}</h3>
+        <ul class="about-list">
+          <li>{{ t('about.objectives_item_1') }}</li>
+          <li>{{ t('about.objectives_item_2') }}</li>
+          <li>{{ t('about.objectives_item_3') }}</li>
+          <li>{{ t('about.objectives_item_4') }}</li>
+        </ul>
+      </article>
+    </div>
   </div>
-  <div class="section-copy">
-    <h2>{{ t('landing.section_commitment_title') }}</h2>
-    <p>{{ t('landing.section_commitment_body') }}</p>
-    <a class="link-action" href="#">{{ t('landing.read_more') }}</a>
+</section>
+
+<section class="commitment-section" id="compromiso">
+  <div class="commitment-heading">
+    <p class="hero-brand">{{ t('values.kicker') }}</p>
+    <h2>{{ t('values.title') }}</h2>
+    <p class="commitment-description">{{ t('values.description') }}</p>
+  </div>
+  <div class="hive-grid">
+    <div class="hive-row">
+      <div class="hive-cell">
+        <div class="hive-hex">
+          <span class="hive-name">{{ t('values.quality_name') }}</span>
+          <p style="font-size: medium; font-style: italic;" class="hive-desc">{{ t('values.quality_desc') }}</p>
+        </div>
+      </div>
+      <div class="hive-cell">
+        <div class="hive-hex">
+          <span class="hive-name">{{ t('values.responsibility_name') }}</span>
+          <p style="font-size: medium; font-style: italic;" class="hive-desc">{{ t('values.responsibility_desc') }}</p>
+        </div>
+      </div>
+      <div class="hive-cell">
+        <div class="hive-hex">
+          <span class="hive-name">{{ t('values.client_name') }}</span>
+          <p style="font-size: medium; font-style: italic;" class="hive-desc">{{ t('values.client_desc') }}</p>
+        </div>
+      </div>
+      <div class="hive-cell">
+        <div class="hive-hex">
+          <span class="hive-name">{{ t('values.teamwork_name') }}</span>
+          <p style="font-size: medium; font-style: italic;" class="hive-desc">{{ t('values.teamwork_desc') }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="hive-row hive-row--offset">
+      <div class="hive-cell">
+        <div class="hive-hex">
+          <span class="hive-name">{{ t('values.origin_name') }}</span>
+          <p style="font-size: medium; font-style: italic;" class="hive-desc">{{ t('values.origin_desc') }}</p>
+        </div>
+      </div>
+      <div class="hive-cell">
+        <div class="hive-hex">
+          <span class="hive-name">{{ t('values.innovation_name') }}</span>
+          <p style="font-size: medium; font-style: italic;" class="hive-desc">{{ t('values.innovation_desc') }}</p>
+        </div>
+      </div>
+      <div class="hive-cell">
+        <div class="hive-hex">
+          <span class="hive-name">{{ t('values.sustainability_name') }}</span>
+          <p style="font-size: medium; font-style: italic;" class="hive-desc">{{ t('values.sustainability_desc') }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -5,6 +5,7 @@
   },
   "nav": {
     "home": "Inicio",
+    "about": "Sobre nosotros",
     "commitment": "Compromiso",
     "certifications": "Certificaciones",
     "view_blog": "Conoce nuestro blog"
@@ -25,6 +26,41 @@
     "section_extra_title": "Impacto medible",
     "section_extra_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
     "read_more": "Ver detalles"
+  },
+  "about": {
+    "kicker": "Sobre nosotros",
+    "title": "Nuestra esencia",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae orci sed sapien faucibus dictum quis a nisl.",
+    "history_title": "Historia",
+    "history_body": "Honey Bee es una empresa yucateca fundada por Lluvia Serena López Pech, dedicada a la producción y venta en línea de miel de alta calidad, combinando tradición apícola, tecnología y compromiso con la sostenibilidad en el mercado nacional.",
+    "mission_title": "Misión",
+    "mission_body": "Ofrecer miel natural mexicana de alta calidad a través de plataformas digitales y comercio electrónico, garantizando pureza, sabor y valor nutritivo, mientras apoyamos a los apicultores locales y promovemos prácticas sostenibles que protejan a las abejas y al medio ambiente.",
+    "vision_title": "Visión",
+    "vision_body": "Consolidarnos como una empresa líder en la comercialización digital y exportación de miel mexicana, reconocida a nivel nacional e internacional por la excelencia de nuestros productos, nuestra presencia en mercados electrónicos y nuestro compromiso con la sustentabilidad y la innovación tecnológica.",
+    "objectives_title": "Objetivos",
+    "objectives_item_1": "Expandir la presencia digital a 5 nuevos estados en 2 años.",
+    "objectives_item_2": "Aumentar las ventas en un 20% anual mediante e-commerce.",
+    "objectives_item_3": "Fortalecer el posicionamiento de la marca en canales digitales.",
+    "objectives_item_4": "Generar alianzas con plataformas y distribuidores online."
+  },
+  "values": {
+    "kicker": "Nuestros valores",
+    "title": "Lo que nos define",
+    "description": "Cada celda de nuestro panal representa un principio que guía nuestras decisiones, procesos y relación con nuestros clientes.",
+    "quality_name": "Calidad",
+    "quality_desc": "Miel natural con procesos que garantizan pureza e inocuidad.",
+    "responsibility_name": "Responsabilidad",
+    "responsibility_desc": "Actuamos con ética, transparencia y cuidado del entorno.",
+    "client_name": "Enfoque al cliente",
+    "client_desc": "Ofrecemos productos confiables y saludables que cumplen sus expectativas.",
+    "teamwork_name": "Trabajo en equipo",
+    "teamwork_desc": "Colaboramos para lograr resultados sostenibles y de calidad.",
+    "origin_name": "Respeto por el origen",
+    "origin_desc": "Valoramos las tradiciones y comunidades apícolas.",
+    "innovation_name": "Innovación",
+    "innovation_desc": "Usamos tecnología y e-commerce para mejorar procesos y ventas.",
+    "sustainability_name": "Sostenibilidad",
+    "sustainability_desc": "Protegemos a las abejas y el ecosistema."
   },
   "blog": {
     "title": "Blog",

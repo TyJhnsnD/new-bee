@@ -25,6 +25,25 @@
     "section_extra_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
     "read_more": "See details"
   },
+  "values": {
+    "kicker": "Our values",
+    "title": "What defines us",
+    "description": "Each cell in our hive represents a principle that guides our decisions, processes, and relationship with customers.",
+    "quality_name": "Quality",
+    "quality_desc": "Natural honey with processes that ensure purity and safety.",
+    "responsibility_name": "Responsibility",
+    "responsibility_desc": "We act with ethics, transparency, and care for the environment.",
+    "client_name": "Customer focus",
+    "client_desc": "We offer reliable and healthy products that meet customer expectations.",
+    "teamwork_name": "Teamwork",
+    "teamwork_desc": "We collaborate to achieve sustainable, high-quality results.",
+    "origin_name": "Respect for origin",
+    "origin_desc": "We value beekeeping traditions and local communities.",
+    "innovation_name": "Innovation",
+    "innovation_desc": "We use technology and e-commerce to improve processes and sales.",
+    "sustainability_name": "Sustainability",
+    "sustainability_desc": "We protect bees and the ecosystem."
+  },
   "blog": {
     "title": "Blog",
     "description": "Coming soon: static reading content."
