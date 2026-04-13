@@ -1,0 +1,248 @@
+:root {
+  --bg: #f6e9dc;
+  --bg-soft: #f1dcc4;
+  --surface: #fff8f1;
+  --ink: #28180f;
+  --ink-soft: #5f4532;
+  --accent: #df8f36;
+  --accent-strong: #b86b18;
+  --blue-ribbon: #255bde;
+  --line: #e8c9a7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink-soft);
+  background-image: linear-gradient(
+      rgba(22, 12, 7, 0.22),
+      rgba(22, 12, 7, 0.3)
+    ),
+    url("/static/img/blog.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.blog-page {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 1.2rem auto 1.8rem;
+  padding-top: 5rem;
+}
+
+.blog-toolbar-wrap {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(980px, calc(100% - 2rem));
+  z-index: 40;
+  padding: 0;
+  background: transparent;
+}
+
+.blog-toolbar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.7rem;
+  align-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  padding: 0.4rem;
+}
+
+.blog-home-btn {
+  border-radius: 999px;
+  background: #f0b13e;
+  color: #24140b;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border: 0;
+  box-shadow: 0 10px 22px rgba(36, 20, 11, 0.24);
+}
+
+.blog-search-wrap {
+  display: block;
+}
+
+.blog-search-wrap input {
+  width: 100%;
+  border: 1px solid rgba(75, 42, 19, 0.2);
+  border-radius: 999px;
+  padding: 0.62rem 0.95rem;
+  font: inherit;
+  color: var(--ink);
+  background: rgba(255, 248, 241, 0.94);
+  box-shadow: 0 10px 22px rgba(36, 20, 11, 0.18);
+}
+
+.blog-intro {
+  margin: 1.1rem 0 1rem;
+}
+
+.blog-kicker {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff241;
+}
+
+.blog-intro h1 {
+  margin: 0.25rem 0 0;
+  font-family: "Baloo 2", sans-serif;
+  color: #ffffff;
+  line-height: 0.9;
+  font-size: clamp(2.1rem, 4.8vw, 3.5rem);
+  letter-spacing: 0.01em;
+  text-shadow: 10px 10px 0 rgba(244, 196, 177, 0.72);
+}
+
+.blog-featured {
+  margin-top: 0.65rem;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1rem;
+  background: rgba(255, 248, 240, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.95rem;
+}
+
+.featured-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-copy h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.45rem, 2.8vw, 2.2rem);
+  line-height: 1.04;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.featured-copy p {
+  margin: 0.6rem 0 0;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.tag-row {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tag-row span {
+  border-radius: 999px;
+  background: #ffe4c4;
+  color: #6e410f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.32rem 0.6rem;
+}
+
+.featured-image {
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.blog-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 249, 243, 0.8);
+  display: grid;
+  grid-template-rows: 108px auto;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card-body {
+  padding: 0.55rem;
+}
+
+.blog-card h3 {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+
+.blog-card p {
+  margin: 0.42rem 0 0;
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.blog-empty {
+  margin-top: 1rem;
+  color: #8a5324;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .blog-page {
+    width: calc(100% - 1rem);
+    margin: 0.6rem auto 1.2rem;
+    padding-top: 7.2rem;
+  }
+
+  .blog-toolbar {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

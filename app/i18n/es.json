@@ -76,7 +76,11 @@
     "phone_value": "+52 999 278 2659"
   },
   "blog": {
-    "title": "Blog",
-    "description": "Próximamente: contenido de lecturas estáticas."
+    "kicker": "Honey Bee Blog",
+    "title": "Articulos que te pueden interesar",
+    "description": "Próximamente: contenido de lecturas estáticas.",
+    "back_home": "Inicio",
+    "search_placeholder": "Buscar articulos por titulo, descripcion, tags o imagen...",
+    "empty": "No encontramos articulos con ese termino."
   }
 }

@@ -59,8 +59,12 @@
     "phone_value": "+52 999 278 2659"
   },
   "blog": {
-    "title": "Blog",
-    "description": "Coming soon: static reading content."
+    "kicker": "WX Blog",
+    "title": "Mock Articles",
+    "description": "Coming soon: static reading content.",
+    "back_home": "Home",
+    "search_placeholder": "Search posts by title, description, tags, or image...",
+    "empty": "No articles found for that search."
   },
   "about": {
     "kicker": "About us",

@@ -1,9 +1,39 @@
-{% extends 'base.html' %}
+<!doctype html>
+<html lang="{{ current_lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ t('blog.title') }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+  </head>
+  <body>
+    <main class="blog-page" data-lang="{{ current_lang }}">
+      <header class="blog-toolbar-wrap">
+        <div class="blog-toolbar">
+          <a class="blog-home-btn" href="{{ url_for('main.home', lang=current_lang) }}">{{ t('blog.back_home') }}</a>
+          <label class="blog-search-wrap" for="blog-search">
+            <input
+              id="blog-search"
+              type="search"
+              placeholder="{{ t('blog.search_placeholder') }}"
+              autocomplete="off">
+          </label>
+        </div>
+      </header>
 
-{% block content %}
-<section class="blog-placeholder">
-  <h1>{{ t('blog.title') }}</h1>
-  <p>{{ t('blog.description') }}</p>
-  <a class="btn btn-main" href="{{ url_for('main.home', lang=current_lang) }}">{{ t('nav.home') }}</a>
-</section>
-{% endblock %}
+      <section class="blog-intro">
+        <p class="blog-kicker">{{ t('blog.kicker') }}</p>
+        <h1 class="blog-title">{{ t('blog.title') }}</h1>
+      </section>
+
+      <section id="blog-featured" class="blog-featured" aria-live="polite"></section>
+      <section id="blog-grid" class="blog-grid" aria-live="polite"></section>
+      <p id="blog-empty" class="blog-empty" hidden>{{ t('blog.empty') }}</p>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/blog.js') }}" defer></script>
+  </body>
+</html>
