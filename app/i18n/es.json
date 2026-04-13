@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Landing Demo",
+    "title": "Honey Bee",
     "tagline": "Compromiso y certificaciones"
   },
   "nav": {
@@ -8,21 +8,23 @@
     "about": "Sobre nosotros",
     "commitment": "Compromiso",
     "certifications": "Certificaciones",
+    "contact": "Contacto",
     "view_blog": "Conoce nuestro blog"
   },
   "landing": {
     "hero_brand": "HONEY BEE",
-    "hero_title": " Miel natural de calidad",
+    "hero_title": " Miel natural de calidad excepcional",
     "hero_subtitle": "Empresa yucateca especializada en la producción de miel orgánica de alta calidad, con venta directa en línea a nivel nacional. Ofrecemos productos naturales, trazables y de origen 100% peninsular, llevando lo mejor de la miel directamente hasta tu hogar",
     "hero_cta": "Conocer más",
     "hero_natural": "100% natural",
     "hero_highlight": "Apoyo a productores locales",
     "hero_sold": "+140,000 frascos vendidos",
+    "available_at": "De venta en",
     "hero_site": "www.yourwebsite.com",
     "section_commitment_title": "Nuestro compromiso",
     "section_commitment_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
     "section_certifications_title": "Certificaciones y estándares",
-    "section_certifications_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.",
+    "section_certifications_body": "Contamos con certificaciones y sellos que respaldan la calidad, inocuidad y origen de nuestra miel en cada etapa del proceso.",
     "section_extra_title": "Impacto medible",
     "section_extra_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
     "read_more": "Ver detalles"
@@ -32,7 +34,7 @@
     "title": "Nuestra esencia",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae orci sed sapien faucibus dictum quis a nisl.",
     "history_title": "Historia",
-    "history_body": "Honey Bee es una empresa yucateca fundada por Lluvia Serena López Pech, dedicada a la producción y venta en línea de miel de alta calidad, combinando tradición apícola, tecnología y compromiso con la sostenibilidad en el mercado nacional.",
+    "history_body": "Honey Bee es una empresa yucateca fundada por Lorem Ipsum dolor Admet, dedicada a la producción y venta en línea de miel de alta calidad, combinando tradición apícola, tecnología y compromiso con la sostenibilidad en el mercado nacional.",
     "mission_title": "Misión",
     "mission_body": "Ofrecer miel natural mexicana de alta calidad a través de plataformas digitales y comercio electrónico, garantizando pureza, sabor y valor nutritivo, mientras apoyamos a los apicultores locales y promovemos prácticas sostenibles que protejan a las abejas y al medio ambiente.",
     "vision_title": "Visión",
@@ -61,6 +63,17 @@
     "innovation_desc": "Usamos tecnología y e-commerce para mejorar procesos y ventas.",
     "sustainability_name": "Sostenibilidad",
     "sustainability_desc": "Protegemos a las abejas y el ecosistema."
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Hablemos",
+    "body": "Nuestra sede se encuentra en Merida, Yucatan, una ciudad reconocida por su cultura y tradicion apicola. Desde aqui coordinamos la logistica, certificaciones y operaciones de exportacion, asegurando que cada frasco llegue a su destino con la maxima calidad. Nuestro equipo esta siempre disponible para brindar atencion personalizada, resolver dudas y apoyar a clientes nacionales e internacionales en todo el proceso de exportacion. Visitanos o contactanos para conocer mas sobre nuestros productos y servicios.",
+    "address_label": "Direccion",
+    "address_value": "C. 21 LB, Villas Merida, 97288 Merida, Yucatan, Mexico",
+    "email_label": "Correo",
+    "email_value": "honeybeegroup@gmail.com",
+    "phone_label": "Telefono",
+    "phone_value": "+52 999 278 2659"
   },
   "blog": {
     "title": "Blog",

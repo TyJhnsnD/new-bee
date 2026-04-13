@@ -7,20 +7,23 @@
     "home": "Home",
     "commitment": "Commitment",
     "certifications": "Certifications",
-    "view_blog": "View blog"
+    "contact": "Contact",
+    "view_blog": "View blog",
+    "about": "About us"
   },
   "landing": {
     "hero_brand": "PURE HONEY",
-    "hero_title": "HONEY",
-    "hero_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+    "hero_title": "Natural honey of exceptional quality",
+    "hero_subtitle": "Yucatecan company specialized in the production of high-quality organic honey, with direct online sales nationwide. We offer natural, traceable products of 100% peninsular origin, bringing the best honey directly to your home.",
     "hero_highlight": "Real commitment",
     "hero_cta": "Learn more",
     "hero_natural": "100% natural",
+    "available_at": "Available at",
     "hero_site": "www.yourwebsite.com",
     "section_commitment_title": "Our commitment",
     "section_commitment_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
     "section_certifications_title": "Certifications and standards",
-    "section_certifications_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.",
+    "section_certifications_body": "We have certifications and seals that guarantee the quality, safety, and origin of our honey at every stage of the process.",
     "section_extra_title": "Measurable impact",
     "section_extra_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
     "read_more": "See details"
@@ -44,8 +47,35 @@
     "sustainability_name": "Sustainability",
     "sustainability_desc": "We protect bees and the ecosystem."
   },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Let's connect",
+    "body": "Our headquarters are in Merida, Yucatan, a city recognized for its culture and beekeeping tradition. From here, we coordinate logistics, certifications, and export operations, ensuring every jar reaches its destination with top quality. Our team is always available to provide personalized support, answer questions, and assist national and international clients throughout the export process. Visit us or get in touch to learn more about our products and services.",
+    "address_label": "Address",
+    "address_value": "C. 21 LB, Villas Merida, 97288 Merida, Yucatan, Mexico",
+    "email_label": "Email",
+    "email_value": "honeybeegroup@gmail.com",
+    "phone_label": "Phone",
+    "phone_value": "+52 999 278 2659"
+  },
   "blog": {
     "title": "Blog",
     "description": "Coming soon: static reading content."
+  },
+  "about": {
+    "kicker": "About us",
+    "title": "Our essence",
+    "description": "Yucatecan company specialized in the production and online sale of high-quality honey, combining beekeeping tradition, technology, and commitment to sustainability in the national market.",
+    "history_title": "History",
+    "history_body": "Honey Bee is a Yucatecan company founded by Lorem Ipsum dolor Admet, dedicated to the production and online sale of high-quality honey, combining beekeeping tradition, technology, and commitment to sustainability in the national market.",
+    "mission_title": "Mission",
+    "mission_body": "To offer high-quality Mexican natural honey through digital platforms and e-commerce, guaranteeing purity, flavor, and nutritional value, while supporting local beekeepers and promoting sustainable practices that protect bees and the environment.",
+    "vision_title": "Vision",
+    "vision_body": "To establish ourselves as a leading company in the digital marketing and export of Mexican honey, recognized nationally and internationally for the excellence of our products, our presence in electronic markets, and our commitment to sustainability and technological innovation.",
+    "objectives_title": "Objectives",
+    "objectives_item_1": "Expand digital presence to 5 new states in 2 years.",
+    "objectives_item_2": "Increase sales by 20% annually through e-commerce.",
+    "objectives_item_3": "Strengthen brand positioning in digital channels.",
+    "objectives_item_4": "Forge alliances with online platforms and distributors."
   }
 }

@@ -11,7 +11,10 @@
       <p class="badge badge-soft">{{ t('landing.hero_sold') }}</p>
     </div>
     <p style="font-size: large;"><b>{{ t('landing.hero_subtitle') }}</b></p>
-    <a class="hero-site" href="#compromiso">{{ t('landing.hero_site') }}</a>
+    <div class="hero-market" aria-label="Punto de venta">
+      <span>{{ t('landing.available_at') }}</span>
+      <img src="{{ url_for('static', filename='img/walmart.png') }}" alt="Walmart">
+    </div>
   </div>
 </section>
 
@@ -111,25 +114,66 @@
   </div>
 </section>
 
-<section class="section-two-cols section-panel section-reverse" id="certificaciones">
-  <div class="section-media">
-    <img src="https://picsum.photos/200/300" alt="Placeholder certificaciones">
-  </div>
-  <div class="section-copy">
-    <h2>{{ t('landing.section_certifications_title') }}</h2>
-    <p>{{ t('landing.section_certifications_body') }}</p>
-    <a class="link-action" href="#">{{ t('landing.read_more') }}</a>
+<section class="certifications-section" id="certificaciones">
+  <div class="certifications-overlay">
+    <div class="certifications-heading">
+      <p class="hero-brand">{{ t('nav.certifications') }}</p>
+      <h2>{{ t('landing.section_certifications_title') }}</h2>
+      <p class="certifications-description">{{ t('landing.section_certifications_body') }}</p>
+    </div>
+    <div class="certifications-grid">
+      <article class="cert-card">
+        <img src="{{ url_for('static', filename='img/certs/all_natural.png') }}" alt="Sello 100% natural">
+      </article>
+      <article class="cert-card">
+        <img src="{{ url_for('static', filename='img/certs/mexico.png') }}" alt="Sello México">
+      </article>
+      <article class="cert-card">
+        <img src="{{ url_for('static', filename='img/certs/iso.png') }}" alt="Certificación ISO 22000">
+      </article>
+      <article class="cert-card">
+        <img src="{{ url_for('static', filename='img/certs/premium.png') }}" alt="Sello calidad premium">
+      </article>
+      <article class="cert-card">
+        <img src="{{ url_for('static', filename='img/certs/senasica.png') }}" alt="Certificación SENASICA">
+      </article>
+      <article class="cert-card">
+        <img src="{{ url_for('static', filename='img/certs/bpm.png') }}" alt="Buenas prácticas de manufactura">
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="section-two-cols section-panel" id="impacto">
-  <div class="section-media">
-    <img src="https://picsum.photos/200/300" alt="Placeholder impacto">
-  </div>
-  <div class="section-copy">
-    <h2>{{ t('landing.section_extra_title') }}</h2>
-    <p>{{ t('landing.section_extra_body') }}</p>
-    <a class="link-action" href="#">{{ t('landing.read_more') }}</a>
+<section class="contact-section" id="contacto">
+  <div class="contact-overlay">
+    <div class="contact-heading">
+      <p class="hero-brand">{{ t('contact.kicker') }}</p>
+      <h2>{{ t('contact.title') }}</h2>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-copy">
+        <p>{{ t('contact.body') }}</p>
+        <div class="contact-meta">
+          <p><strong>{{ t('contact.address_label') }}</strong></p>
+          <p>{{ t('contact.address_value') }}</p>
+          <p><strong>{{ t('contact.email_label') }}</strong></p>
+          <p><a href="mailto:{{ t('contact.email_value') }}">{{ t('contact.email_value') }}</a></p>
+          <p><strong>{{ t('contact.phone_label') }}</strong></p>
+          <p><a href="tel:+529992782659">{{ t('contact.phone_value') }}</a></p>
+        </div>
+      </div>
+      <div class="contact-map-wrap">
+        <iframe
+          class="contact-map"
+          title="Ubicacion Honey Bee"
+          src="https://www.google.com/maps?q=20.927,-89.676&z=16&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   </div>
 </section>
 {% endblock %}
