@@ -8,9 +8,20 @@ Landing page con Flask e i18n JSON (fase inicial).
 
 ## Ejecutar
 
+### En Windows
+
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
+pip install -r requirements.txt
+python run.py
+```
+
+### En Linux/macOS
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 python run.py
 ```
