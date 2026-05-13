@@ -34,7 +34,7 @@
     "title": "Nuestra esencia",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae orci sed sapien faucibus dictum quis a nisl.",
     "history_title": "Historia",
-    "history_body": "Honey Bee es una empresa yucateca fundada por Lorem Ipsum dolor Admet, dedicada a la producción y venta en línea de miel de alta calidad, combinando tradición apícola, tecnología y compromiso con la sostenibilidad en el mercado nacional.",
+    "history_body": "Honey Bee es una empresa yucateca fundada por Lluvia Serena López Pech, dedicada a la producción y venta en línea de miel de alta calidad, combinando tradición apícola, tecnología y compromiso con la sostenibilidad en el mercado nacional.",
     "mission_title": "Misión",
     "mission_body": "Ofrecer miel natural mexicana de alta calidad a través de plataformas digitales y comercio electrónico, garantizando pureza, sabor y valor nutritivo, mientras apoyamos a los apicultores locales y promovemos prácticas sostenibles que protejan a las abejas y al medio ambiente.",
     "vision_title": "Visión",
@@ -78,7 +78,7 @@
   "blog": {
     "kicker": "Honey Bee Blog",
     "title": "Articulos que te pueden interesar",
-    "description": "Próximamente: contenido de lecturas estáticas.",
+    "description": "Bienvenido a nuestro blog, un espacio dedicado a compartir información valiosa sobre el mundo de la apicultura, los beneficios de la miel, consejos para su consumo y mucho más. Aquí encontrarás artículos escritos por expertos que te ayudarán a conocer mejor este fascinante producto natural y su impacto en nuestra salud y el medio ambiente. ¡Explora nuestros contenidos y descubre todo lo que la miel tiene para ofrecerte!",
     "back_home": "Inicio",
     "search_placeholder": "Buscar articulos por titulo, descripcion, tags o imagen...",
     "empty": "No encontramos articulos con ese termino."

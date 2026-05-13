@@ -59,9 +59,9 @@
     "phone_value": "+52 999 278 2659"
   },
   "blog": {
-    "kicker": "WX Blog",
-    "title": "Mock Articles",
-    "description": "Coming soon: static reading content.",
+    "kicker": "Honey Bee Blog",
+    "title": "Read our latest news",
+    "description": "Welcome to our blog, a space dedicated to sharing valuable information about the world of beekeeping, the benefits of honey, tips for its consumption, and much more. Here you will find articles written by experts that will help you better understand this fascinating natural product and its impact on our health and the environment. Explore our content and discover everything honey has to offer!",
     "back_home": "Home",
     "search_placeholder": "Search posts by title, description, tags, or image...",
     "empty": "No articles found for that search."
@@ -71,7 +71,7 @@
     "title": "Our essence",
     "description": "Yucatecan company specialized in the production and online sale of high-quality honey, combining beekeeping tradition, technology, and commitment to sustainability in the national market.",
     "history_title": "History",
-    "history_body": "Honey Bee is a Yucatecan company founded by Lorem Ipsum dolor Admet, dedicated to the production and online sale of high-quality honey, combining beekeeping tradition, technology, and commitment to sustainability in the national market.",
+    "history_body": "Honey Bee is a Yucatecan company founded by Lluvia Serena López Pech, dedicated to the production and online sale of high-quality honey, combining beekeeping tradition, technology, and commitment to sustainability in the national market.",
     "mission_title": "Mission",
     "mission_body": "To offer high-quality Mexican natural honey through digital platforms and e-commerce, guaranteeing purity, flavor, and nutritional value, while supporting local beekeepers and promoting sustainable practices that protect bees and the environment.",
     "vision_title": "Vision",

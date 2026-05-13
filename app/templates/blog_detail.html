@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="{{ current_lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ article.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+  </head>
+  <body>
+    <main class="blog-detail-page">
+      <section class="detail-hero">
+        <div class="detail-copy">
+          <span class="detail-kicker">Blog</span>
+          <h1>{{ article.title }}</h1>
+          <p class="detail-excerpt">{{ article.excerpt }}</p>
+          <div class="detail-meta">
+            {% if article.tags %}
+            <div class="detail-tags">
+              {% for tag in article.tags %}
+              <span>{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <a class="blog-back-btn" href="{{ url_for('main.blog_placeholder', lang=current_lang) }}">← {{ t('blog.back_home') }}</a>
+          </div>
+        </div>
+        <figure class="detail-image">
+          <img src="{{ article.img_banner }}" alt="{{ article.title }}">
+        </figure>
+      </section>
+
+      <section class="detail-story-grid">
+        <article class="article-body">
+          {% for paragraph in article.content %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+        </article>
+
+        <aside class="comments-section">
+          <div class="comments-header">
+            <h2>Comentarios</h2>
+            <p class="comments-note">Lectura abierta, conversación simple. Máximo 50 caracteres.</p>
+          </div>
+
+          <form class="comment-form" method="post" novalidate>
+            <label for="comment-text">Tu comentario</label>
+            <textarea
+              id="comment-text"
+              name="comment"
+              maxlength="50"
+              rows="3"
+              placeholder="Escribe tu comentario aquí...">{{ request.form.comment or '' }}</textarea>
+            {% if comment_error %}
+            <p class="comment-error">{{ comment_error }}</p>
+            {% endif %}
+            <button class="comment-submit" type="submit">Enviar comentario</button>
+          </form>
+
+          <div class="comment-list">
+            {% if comments %}
+            {% for comment in comments %}
+            <article class="comment-item">
+              <p>{{ comment.text }}</p>
+              <time>{{ comment.created_at }}</time>
+            </article>
+            {% endfor %}
+            {% else %}
+            <p class="comment-empty">No hay comentarios todavía. Sé el primero.</p>
+            {% endif %}
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

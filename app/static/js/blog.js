@@ -17,7 +17,7 @@ function articleMatches(article, query) {
 
   const haystack = [
     article.title,
-    article.description,
+    article.excerpt,
     article.img_banner,
     ...(article.tags || []),
   ]
@@ -25,6 +25,10 @@ function articleMatches(article, query) {
     .toLowerCase();
 
   return normalize(haystack).includes(normalize(query));
+}
+
+function getArticleUrl(article) {
+  return `/blog/${article.slug}`;
 }
 
 function renderFeatured(article) {
@@ -35,18 +39,20 @@ function renderFeatured(article) {
 
   featuredContainer.innerHTML = `
     <article class="featured-card">
-      <div class="featured-copy">
-        <div>
-          <h2>${article.title}</h2>
-          <p>${article.description}</p>
+      <a class="featured-card-link" href="${getArticleUrl(article)}">
+        <div class="featured-copy">
+          <div>
+            <h2>${article.title}</h2>
+            <p>${article.excerpt}</p>
+          </div>
+          <div class="tag-row">
+            ${(article.tags || []).map((tag) => `<span>${tag}</span>`).join("")}
+          </div>
         </div>
-        <div class="tag-row">
-          ${(article.tags || []).map((tag) => `<span>${tag}</span>`).join("")}
-        </div>
-      </div>
-      <figure class="featured-image">
-        <img src="${article.img_banner}" alt="${article.title}">
-      </figure>
+        <figure class="featured-image">
+          <img src="${article.img_banner}" alt="${article.title}">
+        </figure>
+      </a>
     </article>
   `;
 }
@@ -56,11 +62,13 @@ function renderCards(articles) {
     .map(
       (article) => `
       <article class="blog-card">
-        <img src="${article.img_banner}" alt="${article.title}">
-        <div class="blog-card-body">
-          <h3>${article.title}</h3>
-          <p>${article.description}</p>
-        </div>
+        <a class="blog-card-link" href="${getArticleUrl(article)}">
+          <img src="${article.img_banner}" alt="${article.title}">
+          <div class="blog-card-body">
+            <h3>${article.title}</h3>
+            <p>${article.excerpt}</p>
+          </div>
+        </a>
       </article>
     `
     )
@@ -84,7 +92,7 @@ function renderResults(allArticles, query) {
 
 async function initBlogMock() {
   try {
-    const response = await fetch("/static/data/blog_list.json", { cache: "no-store" });
+    const response = await fetch("/static/data/blogs.json", { cache: "no-store" });
     const allArticles = await response.json();
 
     renderResults(allArticles, "");
